@@ -1,0 +1,36 @@
+<!-- SANKEY CHART in HTML from JS -->
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><div id="sankey multiple" style="width: 900px; height: 300px;"></div><script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+*
+*
+*
+*
+*
+*
+    ]);
+    var options = {
+      height: 400,
+      width: 1000,
+      sankey: {
+        link: { color: { fill: '#00A991' }, },
+        node: { colors: [ '#252A31'],
+                label: { color: '#005C4E' },
+                          fontSize: 14,
+                          bold: true, },
+      }
+    };
+    var chart = new google.visualization.Sankey(document.getElementById('sankey multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
