@@ -1,0 +1,18 @@
+# JSON template for POWER BI schema configuration
+{
+    "name": "Kiwi_color",
+    "dataColors": ["#00A991", "#007F6D", "#005C4E", "#BAC7D5", "#5F738C", "#252A31", "#28A138", "#2D7738", "#235C2B"],
+    "background":"#FFFFFF",
+    "foreground": "#005C4E",
+    "tableAccent": "#005C4E",
+    "visualStyles":{
+        "*": {
+            "*": {
+                "*": [{
+                    "fontColor": { "solid": { "color": "#00453B" } },
+                    "fontSize": 11
+                }]
+            }
+        }
+    }
+}
